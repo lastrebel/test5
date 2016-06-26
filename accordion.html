@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        .accordion { 
+     width:90%;
+     overflow:hidden; 
+     margin:10px auto; 
+     color:#474747; 
+     background:#414141; 
+     padding:10px; 
+}
+        .accordion section{ 
+      overflow:hidden; 
+      color:#333; 
+      cursor:pointer; 
+      background: #333; 
+      margin:3px;
+}
+        .accordion section:hover {
+      background:#444;
+}
+        .accordion section p { 
+      display:none; 
+}
+        .accordion section:after{
+      position:relative;
+      font-size:44px;
+      color:#000;
+      font-weight:bold;
+}
+        .accordion section:nth-child(1):after{ content:'1'; }
+.accordion section:nth-child(2):after{ content:'2'; }
+.accordion section:nth-child(3):after{ content:'3'; }
+.accordion section:nth-child(4):after{ content:'4'; }
+.accordion section:nth-child(5):after{ content:'5'; }
+        
+        .accordion section:target {
+        height: 200px;
+        overflow: auto;
+      background:#FFF; 
+      padding:10px;
+}
+.accordion section:target:hover { 
+      background:#FFF; 
+}
+.accordion section:target h2 {
+      width:100%;
+}
+.accordion section:target h2 a{ 
+      color:#333; 
+      padding:0;
+}
+.accordion section:target p {
+      display:block;
+}
+.accordion section h2 a{
+      padding:0px 8px;
+      display:block; 
+      font-size:16px; 
+      font-weight:normal;
+      color:#eee; 
+      text-decoration:none; 
+}
+    </style>
+</head>
+<body>
+<div class="accordion horizontal">
+    <section id="about">
+        <h2><a href="#about">About Us</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+    </section>
+ 
+    <section id="morning">
+        <h2><a href="#morning">Morning</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+    </section>
+ 
+    <section id="blog">
+        <h2><a href="#blog">Blog</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+    </section>
+ 
+    <section id="portfolio">
+        <h2><a href="#portfolio">Portfolio</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+    </section>
+ 
+    <section id="contact">
+        <h2><a href="#contact">Contact</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+    </section>
+</div>
+</body>
+</html>
