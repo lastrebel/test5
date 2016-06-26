@@ -2,44 +2,55 @@
 <html>
 <head>
     <style>
+        body{
+    background-color: #f2f2f2;
+}
         .accordion { 
-     width:90%;
      overflow:hidden; 
      margin:10px auto; 
      color:#474747; 
-     background:#414141; 
+     background:#; 
      padding:10px; 
 }
-        .accordion section{ 
+        .accordion section, .card{
       overflow:hidden; 
       color:#333; 
       cursor:pointer; 
-      background: #333; 
-      margin:3px;
+      background: white; 
+      box-shadow: 0px 0.5px 2px 0.5px #cfcfcf;
+    border-radius: 2px; 
+      margin:3px 0px; 
 }
-        .accordion section:hover {
-      background:#444;
+.card {
+    display: inline-block;
+    vertical-align: top;
+    overflow: auto;
+        } 
+.lyrics{
+        margin: 20px;
+        float: top;
+        max-height: 300px;
+        overflow: auto;
+    } 
+.accordion section:hover {
+      background:#999;
+}
+div:hover {
+      background:#fff;
 }
         .accordion section p { 
       display:none; 
 }
         .accordion section:after{
       position:relative;
-      font-size:44px;
+      font-size:24px;
       color:#000;
       font-weight:bold;
 }
-        .accordion section:nth-child(1):after{ content:'1'; }
-.accordion section:nth-child(2):after{ content:'2'; }
-.accordion section:nth-child(3):after{ content:'3'; }
-.accordion section:nth-child(4):after{ content:'4'; }
-.accordion section:nth-child(5):after{ content:'5'; }
-        
         .accordion section:target {
-        height: 200px;
-        overflow: auto;
       background:#FFF; 
       padding:10px;
+      margin: 10px 0px;
 }
 .accordion section:target:hover { 
       background:#FFF; 
@@ -48,46 +59,206 @@
       width:100%;
 }
 .accordion section:target h2 a{ 
-      color:#333; 
+      color:#999;
+    text-decoration: underline;
       padding:0;
 }
 .accordion section:target p {
       display:block;
 }
 .accordion section h2 a{
-      padding:0px 8px;
+      padding:8px 10px;
       display:block; 
       font-size:16px; 
       font-weight:normal;
-      color:#eee; 
+      color:#ddd; 
       text-decoration:none; 
 }
+        
+        .accordion section:target table {
+            display: block;
+            margin: 10px;
+}
+        .accordion section:target tr {
+}
+        .accordion section:target td {
+            vertical-align:top;
+            width: 555px;
+}
+        .accordion section:target td {
+            width: 600px;
+            margin: 0px !important;
+            padding: 6px;
+}
+        .accordion section:target h1, h3, p{
+            padding: 0px 10px;
+}
+        
+        
+        
+        .accordion section table {
+display: none;
+        overflow:scroll;
+        }
     </style>
+
 </head>
 <body>
 <div class="accordion horizontal">
     <section id="about">
-        <h2><a href="#about">About Us</a></h2>
+        <h2><a href="#about">About Today/Tmrrw</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
     </section>
  
-    <section id="morning">
+    <section id="songs">
+        <h2><a href="#songs">Songs</a></h2>
+        <table>
+            <tr>
+                <td>
+                <div class="card">
+              <iframe width="555" height="312" src="https://www.youtube.com/embed/kvgxmW87Fq4" frameborder="0" allowfullscreen></iframe>
+              <div class="lyrics">
+                  <strong><h1 class="h1">Sia</h1>
+                    <h3 class="h2">Black & Blue</h3>
+                    <p style="color:#999"></p>
+                  </strong>
+[Verse 1]<br />
+Break down, tears fall to the ground<br />
+Tell myself: "Damnit, nothing can be found"<br />
+When you're a fighter<br />
+You're a fighter<br />
+You're a fighter, fight on baby<br />
+<br /><br />
+[Verse 2]<br />
+Some days I'm sure I'll lose to fate<br />
+Some days I cannot find my faith<br />
+But I just fight on<br />
+I just fight on<br />
+I just fight on baby, baby<br />
+<br /><br />
+[Pre-Chorus]<br />
+And I am a wounded warrior<br />
+And now that the enemy is closing in<br />
+I am a wounded warrior<br />
+Looking for someone to let me in<br />
+<br /><br />
+[Chorus]<br />
+Black and blue, I'm begging you<br />
+Take me in, I'm surrendering<br />
+Black and blue, but if I'm with you<br />
+If I'm with you, I will live to fight on through<br />
+<br /><br />
+[Verse 3]<br />
+I'll let go, walking into the unknown<br />
+If I surrender, if I lay my arms down<br />
+Am I a fighter?<br />
+Am I a fighter?<br />
+Cause I've been fighting so long baby<br />
+<br /><br />
+[Pre-Chorus]<br />
+And I am a wounded warrior<br />
+And now that the enemy is closing in<br />
+I am a wounded warrior<br />
+Looking for someone to let me in<br />
+<br />
+[Chorus]<br />
+Black and blue, I'm begging you<br />
+Take me in, I'm surrendering<br />
+Black and blue, but if I'm with you<br />
+If I'm with you, I will live to fight on through<br />
+<br />
+[Bridge]<br />
+I am a wounded warrior<br />
+Now that the enemy is closing in<br />
+I am a wounded warrior<br />
+Looking for someone to let me in<br />
+<br /><br />
+I am a wounded warrior<br />
+Now that the enemy is closing in<br />
+Close and in<br />
+Looking for someone to let me in, oh!<br />
+<br /><br />
+[Chorus x2]<br />
+Black and blue, I'm begging you<br />
+Take me in, I'm surrendering<br />
+Black and blue, but if I'm with you<br />
+If I'm with you, I'll live to fight on through<br />
+  <br /><br />
+              </div>
+           </div>
+                </td>
+                <td>
+                    <div class="card">
+                    <iframe width="555" height="312" src="https://www.youtube.com/embed/OBSghlH0JgM" frameborder="0" allowfullscreen></iframe>
+                  <strong><h1 >Christina Aguilera</h1>
+                    <h3>Change</h3>
+                    <p style="color:#999">Lyrics in the video</p>
+                  </strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                    <iframe width="555" height="312px" src="https://www.youtube.com/embed/QXwPUYU8rTI" frameborder="0" allowfullscreen></iframe>
+              <div class="lyrics">
+                  <strong><h1 class="h1">Birdy</h1>
+                    <h3 class="h2">Shelter</h3>
+                    <p style="color:#999">(originally by The xx)</p>
+                  </strong>
+<br />
+I find shelter in this way<br />
+Under cover, hide away<br />
+Can you hear when I say<br />
+I have never felt this way<br />
+  <br /><br />
+Maybe I had said something that was wrong<br />
+Can I make it better with the lights turned on<br />
+Maybe I had said something that was wrong<br />
+Can I make it better with the lights turned on<br />
+  <br /><br />
+Oh [x4]<br />
+  <br /><br />
+Can I be, was I there<br />
+Felt so crystal in the air<br />
+I still want to drown whenever you leave<br />
+Please teach me gently on how to breathe<br />
+  <br /><br />
+And I'll cross oceans like never before<br />
+So you can feel the way I feel it too<br />
+And I'll send images back at you<br />
+So you can see the way I feel it too<br />
+  <br /><br />
+Maybe I had said something that was wrong<br />
+Can I make it better with the lights turned on<br />
+Maybe I had said something that was wrong<br />
+Can I make it better with the lights turned on<br />
+  <br /><br />
+Oh [x8]<br />
+  <br /><br />
+              </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+ 
+<section id="morning">
         <h2><a href="#morning">Morning</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
     </section>
  
-    <section id="blog">
-        <h2><a href="#blog">Blog</a></h2>
+    
+    <section id="productive_part">
+        <h2><a href="#productive_part">Productive part</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
     </section>
  
-    <section id="portfolio">
-        <h2><a href="#portfolio">Portfolio</a></h2>
+    <section id="evening">
+        <h2><a href="#evening">Evening</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
     </section>
  
-    <section id="contact">
-        <h2><a href="#contact">Contact</a></h2>
+    <section id="night">
+        <h2><a href="#night">Night</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
     </section>
 </div>
