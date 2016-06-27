@@ -29,7 +29,7 @@ div {
     vertical-align:top;
     
     min-width:555px;
-    min-height: 312px;
+    max-height: 312px;
     margin-right:55px;
     margin-left: -35px;
     background-color: white;
@@ -37,17 +37,18 @@ div {
     border-radius: 2px;    
     white-space:normal;
 }
-    .vlyrics,.YTvideo {
+    .YTvideo,.inner {
         display: inline-block;
         min-width: 312px;
         height: 312px;
         float: left;
     }
-    
+    .inner {
+        margin: 16px;
+    }
     .vlyrics{
-        padding: 0px 20px 0px 20px;
-        max-height: 600px;
-        overflow: auto;
+        overflow: scroll;
+        max-height: 280px;
     } 
     .YTvideo{
         min-width:555px;
@@ -64,10 +65,11 @@ div {
     <ul>
 
         <li>
-          <div class="inner">
+          <div>
               <div class="YTvideo">
                   <iframe width="100%" height="312px" src="https://www.youtube.com/embed/hSjIz8oQuko" frameborder="0" allowfullscreen></iframe>
               </div>
+              <div class="inner">
               <div class="vlyrics">
                   <strong><h1 class="h1">PINK</h1>
                     <h3 class="h2">Family Portrait</h3></strong>
@@ -170,7 +172,7 @@ I'll go to sleep at night<br>
 <br />
   <br /><br />
               </div>
-
+                  </div>
 
            </div>
         </li>
