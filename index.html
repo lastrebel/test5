@@ -83,6 +83,18 @@ width: 550px;
 .box:hover::after {
     opacity: 1;
 }
+    a:link, a:visited {
+    -moz-transition:all 0.1s ease-in;
+    -o-transition:all 0.1s ease-in;
+    -webkit-transition:all 0.1s ease-in;
+    background-color: white;
+    text-decoration: none;
+        color: #999;
+    } 
+    a:hover {
+        background-color: #999;
+        color: white;
+    }    
     
 </style>
 </head>
@@ -91,7 +103,14 @@ width: 550px;
     <div style="height:20px"></div>
     <div class="outter" style="height:100px">
         <center>
-    <div class="box">Hello there <br> hover over me if you can !!! <br> :D</div>
+    <div class="box">Hello there <br> hover over me if you can !!! <br> :D<br><a href="http://www.google.nl">Google NL</a></div>
+        </center>
+    </div>
+    
+    <div style="height:20px"></div>
+    <div class="outter" style="height:100px">
+        <center>
+    <div class=""><a href="appurl://~/Applications/Calendar.app"><button> there <br> hover over me if you can !!! <br> :D</button></a></div>
         </center>
     </div>
     
